@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mad Libs</title>
+<style>
+h{
+	color: green;
+	font-size: 30px;
+}
+</style>
+</head>
+<body>
+	<h>My Day Today</h>
+	<br>
+
+	<img src="stewie.gif" alt="stewie" display: "block"  margin-left= "auto" margin-right= "auto" width= 300px>
+	<br>
+
+	<p>Today on my way to (Location)_____, I bumped into (Person)_____ and (Person)_____. They were wrestling a (Noun)______. I stopped and looked at their (Body Part(plural))_____, it did not look too good. I asked if I can (Verb)_____ but they refused. I continued on my way until I tripped on a (Noun)_____. I stayed seated on the floor until a (Noun)_____ helped me up to continue on my way.</p>
+
+	<br>
+
+	<p>Location &nbsp
+	<input type="text" id="myText" value=""></p>
+	<p>Person &nbsp
+	<input type="text" id="myText2" value=""></p>
+	<p>Person &nbsp
+	<input type="text" id="myText3" value=""></p>
+	<p>Noun &nbsp
+	<input type="text" id="myText4" value=""></p>
+	<p>Body Part(plural) &nbsp
+	<input type="text" id="myText5" value=""></p>
+	<p>Verb &nbsp
+	<input type="text" id="myText6" value=""></p>
+	<p>Noun &nbsp
+	<input type="text" id="myText7" value=""></p>
+	<p>Noun &nbsp
+	<input type="text" id="myText8" value=""></p>
+
+	<button onclick="myFunction()">Enter</button>
+
+
+	<p id="voice"></p>
+
+	<script type="text/javascript">
+
+		function myFunction(){
+			var a = document.getElementById("myText").value;
+			var b = document.getElementById("myText2").value;
+			var c = document.getElementById("myText3").value;
+			var d = document.getElementById("myText4").value;
+			var e = document.getElementById("myText5").value;
+			var f = document.getElementById("myText6").value;
+			var g = document.getElementById("myText7").value;
+			var h = document.getElementById("myText8").value;
+
+			var x = "Today on my way to "+ a +", I bumped into " + b + " and "+ c + ". They were wrestling a "+ d + ". I stopped and looked at their "+ e +", it did not look too good. I asked if I can "+ f +" but they refused. I continued on my way until I tripped on a "+ g + ". I stayed seated on the floor until a "+ h +" helped me up to continue on my way."
+
+			document.getElementById("voice").innerHTML = x;
+
+			var msg = new SpeechSynthesisUtterance(x);
+			window.speechSynthesis.speak(msg);
+
+			a = document.getElementById("myText").value="";
+			b = document.getElementById("myText2").value="";
+			c = document.getElementById("myText3").value="";
+			d = document.getElementById("myText4").value="";
+			e = document.getElementById("myText5").value="";
+			f = document.getElementById("myText6").value="";
+			g = document.getElementById("myText7").value="";
+			h = document.getElementById("myText8").value="";
+		}
+
+	</script>
+
+
+</body>
+</html>

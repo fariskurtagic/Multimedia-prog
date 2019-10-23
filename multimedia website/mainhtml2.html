@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="maincss.css">
+<script src="mainjs.js"></script>
+</head>
+
+<body>
+<h1>Museum of Modern Art</h1>
+<!-- A grey horizontal navbar that becomes vertical on small screens -->
+<button class="tablink" onclick="openPage('Claude Monet', this, 'red')">Claude Monet</button>
+<button class="tablink" onclick="openPage('Vincent Van Gogh', this, 'green')" id="defaultOpen">Vincent Van Gogh</button>
+<button class="tablink" onclick="openPage('Salvador Dali', this, 'blue')">Salvador Dali</button>
+
+<button class="tablink" onclick="openPage('More Info', this, 'purple')">More Info</button>
+
+<div id="Claude Monet" class="tabcontent">
+  <h3><br/><br/>Claude Monet</h3>
+  <div id="Monet" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#Monet" data-slide-to="0" class="active"></li>
+    <li data-target="#Monet" data-slide-to="1"></li>
+    <li data-target="#Monet" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="pictures/agapanthus.jpg" alt="Agapanthus">
+	<div class="carousel-caption">
+          <h3>Agapanthus</h3>
+          <p><button style="margin:2px 15px 0 0;" data-toggle="popover" title="Agapanthus" data-placement="top" data-trigger="focus" data-content="Monet frequently painted outdoors, drawing endless inspiration from the plants, trees, and pond at Giverny. The gardens on his property were the great extravagance of his final years; their upkeep required the services of six full-time gardeners. Monet planted agapanthus a thin, wispy lily plant native to Africa along the banks of his pond as well as several other types of indigenous and imported vegetation, such as wisteria, irises, and bamboo." 
+	  class="btn btn-light">About This Piece</button>
+	  </p>
+	</div>
+    </div>
+    <div class="carousel-item">
+      	<img src="pictures/waterlillies.jpg" alt="Water Lillies">
+	<div class="carousel-caption">
+          <h3>Water Lillies</h3>
+          <p><button style="margin:2px 15px 0 0;" data-toggle="popover" title="Water Lillies" data-placement="top" data-trigger="focus" data-content="In this triptych Monet depicted his Japanese-style pond covered with water lilies, at center, shimmering with reflections of clouds overhead. The water's surface fills the expansive composition so that conventional clues to the artist's and the viewer's vantage point are eliminated. Monet wished for the paintings to encompass the viewer: in his designs for the Musee de l'Orangerie in Paris, he specified that the Water Lily canvases be displayed on curved walls." 
+	  class="btn btn-light">About This Piece</button>
+          </p>
+	</div>    
+    </div>
+    <div class="carousel-item">
+      <img src="pictures/tjf.jpg" alt="The Japanese Footbridge">
+	<div class="carousel-caption">
+          <h3>The Japanese Footbridge</h3>
+          <p><button style="margin:2px 15px 0 0;" data-toggle="popover" title="The Japanes Footbridge" data-placement="top" data-trigger="focus" data-content="The Japanese Footbridge is among Monet's last paintings of this subject, made between 1920 and 1922. Twenty-five years earlier, in the late 1890s, the footbridge provided the subject of Monet's first series of paintings of his pond at Giverny. While the paintings in the earlier series are more naturalistic in style, the later works feature dense swirls and loose strokes of color that almost obscure the form of the bridge. These later paintings also feature a fiery palette of maroons, rusts, and oranges unique within Monet's body of work." 
+	  class="btn btn-light">About This Piece</button>
+	  </p>
+	</div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#Monet" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#Monet" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+
+</div>
+
+<div id="Vincent Van Gogh" class="tabcontent">
+  <h3><br/><br/>Vincent Van Gogh</h3>
+  <div id="Gogh" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#Gogh" data-slide-to="0" class="active"></li>
+    <li data-target="#Gogh" data-slide-to="1"></li>
+    <li data-target="#Gogh" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="pictures/pojr.jpg" alt="Portrait of Joseph Roulin">
+	<div class="carousel-caption">
+          <h3>Portrait of Joseph Roulin</h3>
+          <p><button style="margin:2px 15px 0 0;" data-toggle="popover" title="Portrait of Joseph Roulin" data-placement="top" data-trigger="focus" data-content="This portrait of Joseph Roulin is one of six van Gogh painted of his close friend, a postal employee in the southern French town of Arles, a fifteen-hour train ride from Paris. Van Gogh had moved to Arles in 1888, hoping to create an artists cooperative there. The plan never came to fruition, and the artist became lonely and isolated. He found comfort and companionship with the Roulin family, and they are the subjects of many of his paintings. In this portrait, Roulin is depicted in the uniform he always wore proudly, set against an imaginative backdrop of swirling flowers. In a letter to his brother Theo, the artist wrote that, of all genres, "the modern portrait" excited him the most: 'I want to paint men and women with that something of the eternal which the halo used to symbolize, and which we try to convey by the actual radiance and vibration of 	  our coloring.'" class="btn btn-light">About This Piece</button>
+	  </p>
+	</div>
+   </div>
+   <div class="carousel-item">
+     <img src="pictures/tsn.jpg" alt="The Starry Night">
+	<div class="carousel-caption">
+          <h3>The Starry Night</h3>
+          <p><button style="margin:2px 15px 0 0;" data-toggle="popover" title="The Stary Night" data-placement="top" data-trigger="focus" data-content="'This morning I saw the country from my window a long time before sunrise, with nothing but the morning star, which looked very big,' van Gogh wrote to his brother Theo, from France. Rooted in imagination and memory,?The Starry Night?embodies an inner, subjective expression of van Gogh's response to nature. In thick, sweeping brushstrokes, a flamelike cypress unites the churning sky and the quiet village below. The village was partly invented, and the church spire evokes van Gogh's native land, the Netherlands." 
+  	  class="btn btn-light">About This Piece</button>
+	  </p>
+	</div>
+   </div>
+   <div class="carousel-item">
+     <img src="pictures/tot.jpg" alt="The Olive Trees">
+	<div class="carousel-caption">
+          <h3>The Olive Trees</h3>
+          <p><button style="margin:2px 15px 0 0;" data-toggle="popover" title="The Olive Trees" data-placement="top" data-trigger="focus" data-content="After van Gogh voluntarily entered the asylum at Saint-Remy in the south of France in the spring of 1889, he wrote his brother Theo: 'I did a landscape with olive trees and also a new study of a starry sky.' Later, when the pictures had dried, he sent both of them to Theo in Paris, noting: 'The olive trees with the white cloud and the mountains behind, as well as the rise of the moon and the night effect, are exaggerations from the point of view of the general arrangement; the outlines are accentuated as in some old woodcuts.'"
+	  class="btn btn-light">About This Piece</button>
+	  </p>
+	</div>
+   </div>
+ </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#Gogh" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#Gogh" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+</div>
+
+<div id="Salvador Dali" class="tabcontent">
+  <h3><br/><br/>Salvador Dali</h3>
+  <div id="Dali" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#Dali" data-slide-to="0" class="active"></li>
+    <li data-target="#Dali" data-slide-to="1"></li>
+    <li data-target="#Dali" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="pictures/ffssm.jpg" alt="Frontispiece for Second Surrealist Manifesto">
+   	<div class="carousel-caption">
+          <h3>Frontispiece for Second Surrealist Manifesto</h3>
+          <p><button style="margin:2px 15px 0 0;" data-toggle="popover" title="Frontispiece for Second Surrealist Manifesto" data-placement="top" data-trigger="focus "data-content="Dali rendered his fantastic visions with meticulous verisimilitude, giving the representations of dreams a tangible and credible appearance. In what he called 'hand painted dream photographs,' hard objects become inexplicably limp, time bends, and metal attracts ants like rotting flesh. The monstrous creature draped across the painting's center resembles the artist's own face in profile; its long eyelashes seem insectlike or even sexual, as does what may or may not be a tongue oozing from its nose like a fat snail." 
+	  class="btn btn-light">About This Piece</button>
+ 	  </p>
+	</div>
+   </div>
+   <div class="carousel-item">
+      <img src="pictures/ip.jpg" alt="Illuminated Pleasures">
+        <div class="carousel-caption">
+          <h3>Illuminated Pleasures</h3>
+          <p><button style="margin:2px 15px 0 0;" data-toggle="popover" title="Illuminated Pleasures" data-placement="top" data-trigger="focus "data-content="The title of this work may refer to the luminous imagery projected on or performed within the theater-like boxes that dominate the composition. Here Dali played with the disjunctions between reality and the illusion experienced in the darkness of a movie theater. The imagery, realized through a combination of painting and collage, refers to personal and universal dreams and anxieties. Dali's own disembodied head appears in the middle box, while an allegory of castration anxiety plays out below. Underscoring the experience of motion-picture viewing presented in the painting, this work illustrated the shooting script for Un Chien andalou when it was published in the journal La Revolution surrealiste." 
+	  class="btn btn-light" data-original-title="Illuminated Pleasures">About This Piece</button>
+	  </p>
+	</div>
+  </div>
+    <div class="carousel-item">
+      <img src="pictures/tpom.jpg" alt="The Persistence of Memory">
+        <div class="carousel-caption">
+          <h3>The Persistence of Memory</h3>
+          <p><button style="margin:2px 15px 0 0;" data-toggle="popover" title="The Persistence of Memory" data-placement="top" data-trigger="focus "data-content="Dali rendered his fantastic visions with meticulous verisimilitude, giving the representations of dreams a tangible and credible appearance. In what he called 'hand painted dream photographs,' hard objects become inexplicably limp, time bends, and metal attracts ants like rotting flesh. The monstrous creature draped across the painting's center resembles the artist's own face in profile; its long eyelashes seem insectlike or even sexual, as does what may or may not be a tongue oozing from its nose like a fat snail." 
+	  class="btn btn-light">About This Piece</button>
+  	  </p>
+        </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#Dali" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#Dali" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+</div>
+<div id="More Info" class="tabcontent">
+  <h3><br/><br/>More Info</h3>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/9hfbNrHmqAA" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+
+</html>

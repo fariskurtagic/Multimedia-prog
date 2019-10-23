@@ -1,0 +1,74 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  text-align: center;
+  margin: auto;
+  font-family: courier;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+.src{
+  position: center;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 60px 20px;
+  height: 70%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: auto;
+  width: auto;
+  outline: none;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 30px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 20px;
+  color: black;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+.popover{
+     display:block;
+     max-width: 500px;
+     width: auto;
+}
+
+#Claude Monet {background-color: red;}
+#Vincent Van Gogh {background-color: green;}
+#Salvador Dali {background-color: blue;}
